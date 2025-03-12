@@ -1,0 +1,295 @@
+.benefits-section {
+  background: var(--background-primary);
+  position: relative;
+  padding: 100px 0;
+}
+
+.benefits-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.benefits-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-mockup {
+  width: 100%;
+  max-width: 500px;
+  background: var(--card-background);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mockup-header {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  display: flex;
+  gap: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mock-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mock-dot:first-child {
+  background: #FF5F57;
+}
+
+.mock-dot:nth-child(2) {
+  background: #FFBD2E;
+}
+
+.mock-dot:nth-child(3) {
+  background: #28CA41;
+}
+
+.dashboard-content {
+  display: flex;
+  height: 500px;
+}
+
+.dash-sidebar {
+  width: 60px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sidebar-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-item.active {
+  background: var(--teal);
+}
+
+.dash-main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.dash-title {
+  width: 120px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.dash-menu {
+  width: 100px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.dash-metrics {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.metric-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.metric-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--teal);
+  opacity: 0.6;
+}
+
+.metric-data {
+  width: 80%;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.dash-chart {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-header {
+  width: 120px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.chart-body {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chart-line {
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background: var(--primary);
+  opacity: 0.4;
+  top: 50%;
+  left: 10%;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.chart-bar {
+  width: 30px;
+  background: var(--teal);
+  border-radius: 4px 4px 0 0;
+}
+
+.chart-bar:nth-child(1) {
+  height: 40%;
+}
+
+.chart-bar:nth-child(2) {
+  height: 70%;
+}
+
+.chart-bar:nth-child(3) {
+  height: 50%;
+}
+
+.chart-bar:nth-child(4) {
+  height: 80%;
+}
+
+.chart-bar:nth-child(5) {
+  height: 60%;
+}
+
+.benefits-content {
+  flex: 1;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 20px;
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(100, 210, 255, 0.1);
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.benefit-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.benefit-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 992px) {
+  .benefits-container {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  
+  .benefits-image, .benefits-content {
+    width: 100%;
+  }
+  
+  .dashboard-mockup {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefit-item {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .benefits-section {
+    padding: 80px 0;
+  }
+  
+  .dashboard-content {
+    height: 400px;
+  }
+  
+  .benefit-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .benefit-text h3 {
+    font-size: 18px;
+  }
+  
+  .benefit-text p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,315 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 0 80px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--background-primary) 0%, var(--background-secondary) 100%);
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--teal);
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.phone-mockup {
+  position: relative;
+  width: 280px;
+  height: 580px;
+}
+
+.phone-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1A1A1A;
+  border-radius: 40px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  border: 6px solid #2A2A2A;
+}
+
+.phone-screen {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background: #0A1128;
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.app-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px 15px;
+}
+
+.screen-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.app-logo {
+  width: 100px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.app-nav {
+  width: 40px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.app-stats {
+  display: flex;
+  gap: 12px;
+  height: 80px;
+}
+
+.stat-block {
+  flex: 1;
+  background: var(--card-background);
+  border-radius: 12px;
+  height: 100%;
+}
+
+.app-chart {
+  height: 180px;
+  background: var(--card-background);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.chart-bar {
+  width: 8px;
+  background: var(--teal);
+  border-radius: 4px;
+}
+
+.chart-bar:nth-child(1) {
+  height: 40%;
+}
+
+.chart-bar:nth-child(2) {
+  height: 60%;
+}
+
+.chart-bar:nth-child(3) {
+  height: 80%;
+}
+
+.chart-bar:nth-child(4) {
+  height: 50%;
+}
+
+.chart-bar:nth-child(5) {
+  height: 70%;
+}
+
+.chart-bar:nth-child(6) {
+  height: 30%;
+}
+
+.chart-bar:nth-child(7) {
+  height: 45%;
+}
+
+.app-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list-item {
+  height: 60px;
+  background: var(--card-background);
+  border-radius: 12px;
+}
+
+.hero-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.shape-1 {
+  width: 400px;
+  height: 400px;
+  background: var(--primary);
+  opacity: 0.15;
+  top: -100px;
+  right: -150px;
+}
+
+.shape-2 {
+  width: 300px;
+  height: 300px;
+  background: var(--teal);
+  opacity: 0.1;
+  bottom: -50px;
+  left: -50px;
+}
+
+.shape-3 {
+  width: 200px;
+  height: 200px;
+  background: var(--accent);
+  opacity: 0.1;
+  top: 30%;
+  left: 30%;
+}
+
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-image {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 100px 0 60px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .stat-item {
+    flex: 1;
+    min-width: 80px;
+  }
+
+  .phone-mockup {
+    width: 240px;
+    height: 500px;
+  }
+}
